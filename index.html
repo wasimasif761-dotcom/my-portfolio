@@ -13,53 +13,72 @@
     <style>
         body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; background: #f4f7f6; color: #333; text-align: center; }
         .hero { background: #002366; color: white; padding: 60px 20px; border-bottom: 5px solid #d32f2f; }
-        .hero h1 { font-size: 3rem; margin: 0; text-transform: uppercase; }
+        .hero h1 { font-size: 3rem; margin: 0; }
         .hero h2 { color: #ffeb3b; font-size: 1.5rem; margin: 10px 0; }
-        .qr-section { background: white; padding: 30px 20px; margin: -30px auto 30px; max-width: 800px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); position: relative; z-index: 10; }
-        .qr-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
-        .qr-card { padding: 20px; border: 1px solid #eee; border-radius: 10px; background: #fafafa; }
-        .qr-box { display: flex; justify-content: center; margin: 15px 0; }
-        .resume-container { max-width: 800px; margin: 40px auto; padding: 30px; background: #fff; text-align: left; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-        .resume-container h3 { color: #002366; border-bottom: 2px solid #002366; padding-bottom: 10px; }
-        .job-card { background: #f9f9f9; padding: 20px; border-left: 5px solid #d32f2f; margin-bottom: 20px; border-radius: 4px; }
-        .footer { background: #1a1a1a; color: white; padding: 40px 20px; margin-top: 50px; }
-        .btn-call { display: inline-block; padding: 12px 35px; background: #d32f2f; color: white; text-decoration: none; border-radius: 50px; font-weight: bold; margin-top: 20px; border: 2px solid #ffeb3b; }
+        
+        .social-box { background: white; padding: 25px; margin: -30px auto 30px; max-width: 800px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); position: relative; z-index: 10; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; }
+        .card { padding: 15px; border: 1px solid #eee; border-radius: 10px; background: #fafafa; text-decoration: none; color: inherit; transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); background: #fff; border-color: #d32f2f; }
+        .qr-box { display: flex; justify-content: center; margin: 10px 0; }
+
+        .container { max-width: 800px; margin: 20px auto; padding: 30px; background: #fff; text-align: left; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        h3 { color: #002366; border-bottom: 2px solid #002366; padding-bottom: 10px; }
+        .job-card { background: #f9f9f9; padding: 15px; border-left: 5px solid #d32f2f; margin-bottom: 15px; border-radius: 4px; }
+        
+        .footer { background: #1a1a1a; color: white; padding: 30px; margin-top: 40px; }
+        .btn-call { display: inline-block; padding: 10px 30px; background: #d32f2f; color: white; text-decoration: none; border-radius: 50px; font-weight: bold; margin-top: 15px; border: 2px solid #ffeb3b; }
     </style>
 </head>
 <body>
 
     <div class="hero">
         <h1>WASEEM ASIF</h1>
-        <h2>Web Developer & Professional Designer</h2>
-        <a href="tel:+966597440515" class="btn-call"><i class="fas fa-phone"></i> Contact Me</a>
+        <h2>Web Developer & Assistant Store Keeper</h2>
+        <p>Location: Riyadh, Saudi Arabia</p>
+        <a href="tel:+966597440515" class="btn-call"><i class="fas fa-phone"></i> Call Me Now</a>
     </div>
 
-    <div class="qr-section">
-        <div class="qr-grid">
-            <div class="qr-card">
-                <i class="fab fa-whatsapp" style="font-size: 35px; color: #25d366;"></i>
+    <div class="social-box">
+        <h3>Contact & Social Links</h3>
+        <div class="grid">
+            <a href="https://wa.me/966597440515" class="card">
+                <i class="fab fa-whatsapp" style="font-size: 30px; color: #25d366;"></i>
                 <h4>WhatsApp</h4>
                 <div id="wa-qr" class="qr-box"></div>
-                <p>Scan to Chat</p>
-            </div>
-            <div class="qr-card">
-                <i class="fab fa-tiktok" style="font-size: 35px; color: #000;"></i>
+            </a>
+            <a href="https://www.tiktok.com/@wasim.ahmad276" class="card">
+                <i class="fab fa-tiktok" style="font-size: 30px; color: #000;"></i>
                 <h4>TikTok</h4>
                 <div id="tk-qr" class="qr-box"></div>
-                <p>Scan to Follow</p>
-            </div>
+            </a>
+            <a href="https://www.facebook.com/wasim.asif.76" class="card">
+                <i class="fab fa-facebook" style="font-size: 30px; color: #1877f2;"></i>
+                <h4>Facebook</h4>
+                <p>View Profile</p>
+            </a>
+            <a href="https://www.linkedin.com/in/wasim-asif-a59336219" class="card">
+                <i class="fab fa-linkedin" style="font-size: 30px; color: #0077b5;"></i>
+                <h4>LinkedIn</h4>
+                <p>Professional Link</p>
+            </a>
         </div>
     </div>
 
-    <div class="resume-container">
-        <h3>Professional Summary</h3>
-        <p>Dedicated professional with over 25 years of international experience in warehouse operations and pharmaceutical stock management.</p>
-        
-        <h3>Work Experience</h3>
+    <div class="container">
+        <h3>Professional Experience (The Original Page)</h3>
         <div class="job-card">
             <strong>Assistant Store Keeper / Warehouse Helper</strong><br>
-            Isam Economical Company Ltd, Riyadh, KSA (2023 – Present)
+            Isam Economical Company Ltd, Riyadh, KSA (2023 - Present)
+            <p>Specialized in pharmaceutical stock and warehouse management.</p>
         </div>
+        <div class="job-card">
+            <strong>25+ Years Experience</strong><br>
+            Worked in KSA, UAE, and Malaysia in logistics and maintenance.
+        </div>
+        
+        <h3>Education</h3>
+        <p>Intermediate (HSSC) - 2018 | Matriculation (SSC) - 1994</p>
     </div>
 
     <div class="footer">
@@ -69,10 +88,9 @@
 
     <script>
         window.onload = function() {
-            new QRCode(document.getElementById("wa-qr"), { text: "https://wa.me/966597440515", width: 140, height: 140 });
-            new QRCode(document.getElementById("tk-qr"), { text: "https://www.tiktok.com/@wasim.ahmad276", width: 140, height: 140 });
+            new QRCode(document.getElementById("wa-qr"), { text: "https://wa.me/966597440515", width: 120, height: 120 });
+            new QRCode(document.getElementById("tk-qr"), { text: "https://www.tiktok.com/@wasim.ahmad276", width: 120, height: 120 });
         };
     </script>
 </body>
 </html>
-
