@@ -1,127 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="google-site-verification" content="google52b6fc6fec8be4c1" />
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Waseem Asif - Portfolio & Social Connect</title>
+    <title>Waseem Asif | Web Designer & Assistant Store Keeper</title>
     
-    <meta name="description" content="Official Portfolio of Waseem Asif - Assistant Store Keeper and Web Designer in Riyadh. Connect via WhatsApp and TikTok.">
-    <meta name="keywords" content="Waseem Asif, Waseem Asif Riyadh, Assistant Store Keeper, Warehouse Expert, Waseem Asif Portfolio">
-    <meta name="author" content="Waseem Asif">
-
+    <meta name="description" content="Official Portfolio of Waseem Asif - Professional Web Designer and Assistant Store Keeper in Riyadh, Saudi Arabia.">
+    <meta name="keywords" content="Waseem Asif, Web Designer Riyadh, Store Keeper, Warehouse Worker KSA">
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
+    
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; scroll-behavior: smooth; }
-        header { background: #002366; color: #fff; padding: 3rem 1rem; text-align: center; border-bottom: 5px solid #d32f2f; }
-        .container { max-width: 900px; margin: 20px auto; padding: 25px; background: #fff; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-        h1 { margin: 0; font-size: 2.5rem; }
-        h2 { color: #002366; border-bottom: 2px solid #002366; padding-bottom: 5px; margin-top: 30px; }
-        .job-card { background: #f9f9f9; padding: 15px; border-left: 5px solid #d32f2f; margin-bottom: 15px; border-radius: 4px; }
-        .job-title { font-weight: bold; color: #002366; font-size: 1.2rem; }
-        .company { color: #555; font-style: italic; }
-        .date { font-weight: bold; color: #d32f2f; }
-        .footer { background: #333; color: white; text-align: center; padding: 30px; margin-top: 40px; }
-        .contact-link { color: #ffeb3b; text-decoration: none; }
-        ul { padding-left: 20px; }
-
-        /* Social Section Button */
-        .next-btn { display: block; width: fit-content; margin: 30px auto; padding: 15px 30px; background: #ffeb3b; color: #002366; text-decoration: none; font-weight: bold; border-radius: 50px; border: 2px solid #002366; transition: 0.3s; }
-        .next-btn:hover { background: #002366; color: #fff; }
-
-        /* New Social/QR Section */
-        .social-section { background: #fff; padding: 40px 20px; border-top: 5px solid #ffeb3b; text-align: center; }
-        .social-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; max-width: 900px; margin: 20px auto; }
-        .social-card { padding: 20px; border: 1px solid #ddd; border-radius: 12px; background: #f9f9f9; }
-        .qr-box { display: flex; justify-content: center; margin: 15px 0; background: #fff; padding: 10px; border-radius: 8px; }
-        .btn-link { display: inline-block; padding: 10px 20px; background: #002366; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 10px; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; background: #f4f7f6; color: #333; text-align: center; }
         
-        .ad-slot { background: #eee; margin: 20px auto; padding: 15px; border: 1px dashed #bbb; max-width: 728px; color: #888; border-radius: 8px; font-size: 12px; text-align: center; }
+        /* HEADER SECTION (English Version) */
+        .hero { background: #002366; color: white; padding: 60px 20px; border-bottom: 5px solid #d32f2f; }
+        .hero h1 { font-size: 3rem; margin: 0; text-transform: uppercase; letter-spacing: 2px; }
+        .hero h2 { color: #ffeb3b; font-size: 1.5rem; margin: 10px 0; font-weight: 400; }
+
+        /* QR & SOCIAL SECTION */
+        .social-box { background: white; padding: 30px 20px; margin: -30px auto 30px; max-width: 800px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); position: relative; z-index: 10; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+        .card { padding: 20px; border: 1px solid #eee; border-radius: 10px; background: #fafafa; }
+        .qr-box { display: flex; justify-content: center; margin: 15px 0; }
+
+        /* EXPERIENCE SECTION */
+        .container { max-width: 800px; margin: 40px auto; padding: 30px; background: #fff; text-align: left; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        h3 { color: #002366; border-bottom: 2px solid #002366; padding-bottom: 10px; }
+        .job-card { background: #f9f9f9; padding: 20px; border-left: 5px solid #d32f2f; margin-bottom: 20px; border-radius: 4px; }
+        
+        .footer { background: #1a1a1a; color: white; padding: 40px 20px; margin-top: 50px; }
+        .btn-call { display: inline-block; padding: 12px 35px; background: #d32f2f; color: white; text-decoration: none; border-radius: 50px; font-weight: bold; margin-top: 20px; transition: 0.3s; border: 2px solid #ffeb3b; }
+        .btn-call:hover { background: #002366; }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>WASEEM ASIF</h1>
-    <p>Assistant Store Keeper | Warehouse Worker | General Helper</p>
-    <p>Location: Riyadh, Saudi Arabia | Physically Fit & Tobacco-Free</p>
-</header>
-
-<div class="container">
-    <h2>Professional Summary</h2>
-    <p>Dedicated professional with over 25 years of diverse international experience in warehouse operations, logistics, and technical maintenance across KSA, UAE, and Malaysia. Expert in pharmaceutical stock management and material handling.</p>
-
-    <a href="#connect" class="next-btn"><i class="fas fa-qrcode"></i> View My Social Links & QR Codes</a>
-
-    <h2>Work Experience</h2>
-
-    <div class="job-card">
-        <span class="date">Oct 2023 – Present</span><br>
-        <span class="job-title">Assistant Store Keeper / Warehouse Helper</span><br>
-        <span class="company">Isam Economical Company Ltd, Riyadh, KSA</span>
-        <p>Managing pharmaceutical stock, loading, unloading, and inventory organization.</p>
+    <div class="hero">
+        <h1>WASEEM ASIF</h1>
+        <h2>Web Developer & Professional Designer</h2>
+        <a href="tel:+966597440515" class="btn-call"><i class="fas fa-phone"></i> Contact Me</a>
     </div>
 
-    <div class="job-card">
-        <span class="date">2020 – 2023</span><br>
-        <span class="job-title">Contract Driver (Logistics & Transport)</span><br>
-        <span class="company">SNGPL, Lahore, Pakistan</span>
-        <p>Transporting materials for gas pipeline operations and maintaining vehicle logs.</p>
-    </div>
-
-    <h2>Education</h2>
-    <ul>
-        <li><strong>Intermediate (HSSC):</strong> Lahore Board (2018)</li>
-        <li><strong>Matriculation (SSC):</strong> Lahore Board (1994)</li>
-    </ul>
-</div>
-
-<div class="ad-slot">Advertisement Slot (Google AdSense)</div>
-
-<section class="social-section" id="connect">
-    <h2>Connect With Me</h2>
-    <p>Scan the QR codes or click the buttons below to reach me.</p>
-    
-    <div class="social-grid">
-        <div class="social-card">
-            <i class="fab fa-whatsapp" style="font-size: 40px; color: #25d366;"></i>
-            <h3>WhatsApp</h3>
-            <div id="wa-qr" class="qr-box"></div>
-            <a href="https://wa.me/9667447275" class="btn-link">Message Me</a>
-        </div>
-
-        <div class="social-card">
-            <i class="fab fa-tiktok" style="font-size: 40px; color: #000;"></i>
-            <h3>TikTok</h3>
-            <div id="tk-qr" class="qr-box"></div>
-            <a href="https://www.tiktok.com/@wasim.ahmad276" class="btn-link">Follow Me</a>
+    <div class="social-box">
+        <div class="grid">
+            <div class="card">
+                <i class="fab fa-whatsapp" style="font-size: 35px; color: #25d366;"></i>
+                <h4 style="margin: 10px 0;">WhatsApp</h4>
+                <div id="wa-qr" class="qr-box"></div>
+                <p style="font-size: 0.9rem; color: #666;">Scan to Chat</p>
+            </div>
+            <div class="card">
+                <i class="fab fa-tiktok" style="font-size: 35px; color: #000;"></i>
+                <h4 style="margin: 10px 0;">TikTok</h4>
+                <div id="tk-qr" class="qr-box"></div>
+                <p style="font-size: 0.9rem; color: #666;">Scan to Follow</p>
+            </div>
         </div>
     </div>
-</section>
 
-<div class="footer">
-    <p>WhatsApp: <strong>+923224994337</strong> | Phone (KSA): <strong>+966597440515</strong></p>
-    <p>Email: <a href="mailto:wasimasif761@gmail.com" class="contact-link">wasimasif761@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/wasim-asif-1590a71bb" class="contact-link" target="_blank">View Profile</a></p>
-    <p style="margin-top: 20px; font-size: 0.8rem; opacity: 0.7;">© 2026 Waseem Asif. All Rights Reserved.</p>
-</div>
+    <div class="container">
+        <h3>Professional Experience</h3>
+        <div class="job-card">
+            <span style="font-weight:bold; color:#d32f2f;">Oct 2023 – Present</span><br>
+            <strong>Assistant Store Keeper / Warehouse Helper</strong><br>
+            Isam Economical Company Ltd, Riyadh, KSA.
+            <p style="margin-top: 10px;">Managing pharmaceutical inventory, stock logistics, and warehouse organization.</p>
+        </div>
 
-<script>
-    function generateQR(id, link) {
-        new QRCode(document.getElementById(id), {
-            text: link,
-            width: 140,
-            height: 140,
-            colorDark : "#002366",
-            colorLight : "#ffffff"
-        });
-    }
-    window.onload = function() {
-        generateQR("wa-qr", "https://wa.me/9667447275");
-        generateQR("tk-qr", "https://www.tiktok.com/@wasim.ahmad276");
-    };
-</script>
+        <div class="job-card">
+            <span style="font-weight:bold; color:#d32f2f;">Skills Summary</span><br>
+            <p>Web Development, Responsive Design, Inventory Management, Professional Logistics, Material Handling.</p>
+        </div>
+    </div>
 
+    <div class="footer">
+        <p><i class="fas fa-envelope"></i> wasimasif761@gmail.com</p>
+        <p style="font-size: 0.8rem; opacity: 0.6; margin-top: 20px;">© 2026 Waseem Asif. All Rights Reserved.</p>
+    </div>
+
+    <script>
+        window.onload = function() {
+            // Generating QR Codes with professional styling
+            new QRCode(document.getElementById("wa-qr"), { text: "https://wa.me/966597440515", width: 140, height: 140, colorDark: "#002366" });
+            new QRCode(document.getElementById("tk-qr"), { text: "https://www.tiktok.com/@wasim.ahmad276", width: 140, height: 140, colorDark: "#002366" });
+        };
+    </script>
 </body>
 </html>
