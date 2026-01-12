@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Experience - Part 3</title>
+    <style>body{font-family:sans-serif; background:#f4f7f9; padding:20px;} .box{background:white; padding:15px; border-left:5px solid #004a99; margin-bottom:20px; border-radius:5px;}</style>
+</head>
+<body>
+    <nav><a href="experience2.html"> << Back</a> | <b>Page 3</b> | <a href="index.html">Home</a></nav>
+    <h2 style="color:#004a99;">Previous & International Roles</h2>
+
+    <div class="box">
+        <b>Dubai Experience (1997-1999)</b><br>
+        Electrician at Sensaire Services LLC [cite: 1997-1999, 2025-12-23]
+    </div>
+
+    <div class="box">
+        <b>Shoaib Medical Store (2004-2009)</b><br>
+        Business Owner (Pharmacy) [cite: 2025-12-23]
+    </div>
+
+    <div class="box">
+        <b>Academic & Technical Skills</b><br>
+        Inter (2018), Matric (1994) & Power Maintenance Skills [cite: 2026-01-11]
+    </div>
+</body>
+</html>
