@@ -5,20 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work Experience | Waseem Ahmad</title>
     <style>
-        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: #333; margin: 0; background: #f4f7f9; }
-        header { background: #004a99; color: white; padding: 20px; text-align: center; }
-        nav { background: #002d5a; padding: 15px; text-align: center; position: sticky; top: 0; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; margin: 0; background: #f4f7f9; }
+        header { background: #004a99; color: white; padding: 30px; text-align: center; }
+        nav { background: #002d5a; padding: 15px; text-align: center; position: sticky; top: 0; z-index: 1000; }
         nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        .container { max-width: 900px; margin: 20px auto; padding: 20px; background: white; border-radius: 8px; }
-        .exp-item { border-left: 4px solid #004a99; padding-left: 20px; margin-bottom: 30px; position: relative; }
-        .exp-date { font-weight: bold; color: #004a99; }
-        .exp-title { font-size: 1.2em; font-weight: bold; margin: 5px 0; }
-        .education-section { background: #eef2f7; padding: 20px; border-radius: 8px; margin-top: 40px; }
+        .container { max-width: 900px; margin: 20px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .exp-card { border-left: 5px solid #004a99; padding: 15px 25px; margin-bottom: 25px; background: #fff; border-radius: 0 8px 8px 0; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); }
+        .exp-date { font-weight: bold; color: #004a99; font-size: 1.1em; }
+        .exp-title { font-size: 1.3em; font-weight: bold; margin: 5px 0; color: #333; }
+        .exp-location { font-style: italic; color: #666; margin-bottom: 10px; }
+        .description { text-align: justify; }
+        .edu-section { background: #eef2f7; padding: 25px; border-radius: 8px; margin-top: 40px; }
         footer { background: #002d5a; color: white; text-align: center; padding: 20px; margin-top: 40px; }
     </style>
 </head>
 <body>
-    <header><h1>Professional Experience</h1></header>
+    <header>
+        <h1>25+ Years of International Experience</h1>
+        <p>Expertise in Logistics, Electrical Maintenance & Pharmaceuticals</p>
+    </header>
     <nav>
         <a href="index.html">Home</a>
         <a href="experience.html">Experience</a>
@@ -26,51 +31,59 @@
     </nav>
 
     <div class="container">
-        <div class="exp-item">
+
+        <div class="exp-card">
             <div class="exp-date">2023 – Present</div>
             <div class="exp-title">Loading/Unloading Specialist</div>
-            <p>ISAM Economic Co. & Partners Ltd, Riyadh, Saudi Arabia [cite: 2026-01-11]</p>
+            <div class="exp-location">ISAM Economic Co. & Partners Ltd, Riyadh, Saudi Arabia</div>
+            <p class="description">Handling complex logistics and material management operations within a fast-paced environment. Responsible for the safe and efficient movement of pharmaceutical goods۔</p>
         </div>
 
-        <div class="exp-item">
+        <div class="exp-card">
             <div class="exp-date">2016 – 2017</div>
             <div class="exp-title">Electrician (Power)</div>
-            <p>Hussain Advisory, Karachi, Pakistan [cite: 2026-01-11]</p>
+            <div class="exp-location">Hussain Advisory, Karachi, Pakistan</div>
+            <p class="description">Managed power systems and electrical maintenance. Specialized in high-voltage systems and industrial power solutions across major sites in Karachi۔</p>
         </div>
 
-        <div class="exp-item">
+        <div class="exp-card">
             <div class="exp-date">2012 – 2016</div>
             <div class="exp-title">Sales Officer (Pharmaceuticals)</div>
-            <p>Al-Hamid Traders, Lahore, Pakistan [cite: 2026-01-11]</p>
+            <div class="exp-location">Al-Hamid Traders, Lahore, Pakistan</div>
+            <p class="description">Leading sales and distribution of medicine products. Built strong relationships with clients and managed wholesale operations for the Lahore region۔</p>
         </div>
 
-        <div class="exp-item">
-            <div class="exp-date">2011 (Jan – Jul)</div>
-            <div class="exp-title">Construction Worker</div>
-            <p>KSD Resources Services, Kuala Lumpur, Malaysia [cite: 2026-01-11]</p>
-        </div>
-
-        <div class="exp-item">
+        <div class="exp-card">
             <div class="exp-date">2004 – 2011</div>
-            <div class="exp-title">Pharmacy Business Owner</div>
-            <p>Shoaib Medical Store & Servaid Pharmacy, Lahore [cite: 2026-01-11, 2025-12-23]</p>
+            <div class="exp-title">Pharmacy Owner & Sales Professional</div>
+            <div class="exp-location">Shoaib Medical Store & Servaid Pharmacy, Lahore</div>
+            <p class="description">Ran a successful independent pharmacy (Shoaib Medical Store) for 5 years and worked with Servaid Pharmacy as a Salesman, gaining extensive knowledge in pharmaceutical management۔</p>
         </div>
 
-        <div class="exp-item">
+        <div class="exp-card">
             <div class="exp-date">1997 – 1999</div>
             <div class="exp-title">Air-Conditioning & Electrician</div>
-            <p>Sensaire Services LLC, Dubai, UAE [cite: 2026-01-11, 2025-12-23]</p>
+            <div class="exp-location">Sensaire Services LLC, Dubai, UAE</div>
+            <p class="description">My first international role. Focused on electrical maintenance and large-scale air-conditioning systems for residential and commercial complexes in Dubai۔</p>
         </div>
 
-        <div class="education-section">
+        <div class="exp-card">
+            <div class="exp-date">1994 – 1997</div>
+            <div class="exp-title">Delivery Man (Marketing)</div>
+            <div class="exp-location">Spencer Distribution Ltd, Lahore, Pakistan</div>
+            <p class="description">Started professional journey in the marketing sector, handling product distribution and logistics for major clients in Lahore۔</p>
+        </div>
+
+        <div class="edu-section">
             <h2>Education</h2>
-            <p><strong>Intermediate (HSSC):</strong> Lahore Board (2018) [cite: 2026-01-11]</p>
-            <p><strong>Matriculation (SSC):</strong> Lahore Board (1994) [cite: 2026-01-11]</p>
+            <p><strong>Intermediate (HSSC):</strong> Lahore Board (2018)</p>
+            <p><strong>Matriculation (SSC):</strong> Lahore Board (1994)</p>
         </div>
     </div>
 
     <footer>
-        <p>© 2026 Waseem Ahmad | wasimasif761@gmail.com [cite: 2025-12-24]</p>
+        <p>© 2026 Waseem Ahmad | Riyadh, KSA | wasimasif761@gmail.com</p>
     </footer>
 </body>
-</html>
+                </html>
+    
