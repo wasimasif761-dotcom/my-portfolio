@@ -1,13 +1,38 @@
 <!DOCTYPE html>
-<html>
-<head><meta name="viewport" content="width=device-width, initial-scale=1.0"></head>
-<body style="font-family:sans-serif; text-align:center; padding:20px; background:#f4f7f9;">
-    <h2>My YouTube Video</h2>
-    <div style="margin:20px 0;">
-        <iframe width="100%" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Videos & Saad's Website</title>
+    <style>
+        body { font-family: sans-serif; background: #f0f2f5; text-align: center; padding: 20px; }
+        .container { max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .btn { display: block; width: 90%; margin: 15px auto; padding: 15px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 18px; color: white; }
+        .yt-btn { background: #FF0000; } /* یوٹیوب کے لیے سرخ رنگ */
+        .saad-btn { background: #004a99; } /* سعد کی ویب سائٹ کے لیے نیلا رنگ */
+        .home-btn { background: #333; }
+        h2 { color: #333; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>My YouTube & Family Links</h2>
+        <p>میرے یوٹیوب چینل اور سعد کی آفیشل ویب سائٹ کے لنکس نیچے موجود ہیں</p>
+
+        <a href="https://www.youtube.com/@wasimasif761" target="_blank" class="btn yt-btn">
+            <i class="fab fa-youtube"></i> Visit My YouTube Channel
+        </a>
+
+        <a href="https://steve-ai.netlify.app" target="_blank" class="btn saad-btn">
+            Visit Saad's Official Website
+        </a>
+
+        <hr>
+        
+        <p>واپس جانے کے لیے نیچے کلک کریں</p>
+        <a href="index.html" class="btn home-btn">Back to Home Page</a>
     </div>
-    <p>Visit my son Saad's AI Platform: <a href="https://steve-ai.netlify.app/chat">Saad Pie</a> [cite: 2025-12-31]</p>
-    <br>
-    <a href="index.html" style="background:#004a99; color:white; padding:12px 25px; text-decoration:none; border-radius:5px;">Return to Home</a>
+
 </body>
 </html>
