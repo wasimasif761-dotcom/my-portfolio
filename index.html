@@ -1,33 +1,262 @@
 <!DOCTYPE html>
-<html lang="ur">
+<html lang="en">
 <head>
-    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Waseem Ahmad Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="ADD_YOUR_GOOGLE_CONSOLE_LINK_HERE" />
+    
+    <title>Waseem Asif | Official Portfolio</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <style>
-        body { font-family: sans-serif; margin: 0; background: #f4f7f9; text-align: center; }
-        .header { background: #004a99; color: white; padding: 40px 20px; }
-        nav { background: #002d5a; padding: 10px; }
-        nav a { color: white; margin: 0 10px; text-decoration: none; font-weight: bold; }
-        .container { padding: 20px; max-width: 600px; margin: auto; background: white; border-radius: 10px; margin-top: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .btn { display: block; background: #004a99; color: white; padding: 15px; margin: 10px 0; text-decoration: none; border-radius: 5px; font-weight: bold; }
-        .fb-btn { background: #3b5998; color: white; padding: 10px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 10px; }
+        :root {
+            --primary-color: #004a99;
+            --secondary-color: #28a745;
+            --dark-color: #333;
+            --light-color: #f4f4f4;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: var(--dark-color);
+            background-color: var(--light-color);
+        }
+
+        /* Navbar Style */
+        nav {
+            background: var(--dark-color);
+            color: white;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--secondary-color);
+        }
+
+        /* Hero Section */
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://via.placeholder.com/1500x500');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .status-badge {
+            background: var(--secondary-color);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Main Content Container */
+        .container {
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+        }
+
+        .main-info {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.05);
+        }
+
+        /* Ad & Link Boxes */
+        .ad-sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .ad-box {
+            background: #fff;
+            border: 2px dashed var(--primary-color);
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            min-height: 150px;
+        }
+
+        /* Buttons Section */
+        .btn-group {
+            margin-top: 30px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .btn-primary { background: var(--primary-color); color: white; }
+        .btn-secondary { background: var(--secondary-color); color: white; }
+
+        /* Footer & Social Media */
+        footer {
+            background: var(--dark-color);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 28px;
+            margin: 0 15px;
+            transition: 0.3s;
+        }
+
+        .social-links a:hover {
+            color: var(--secondary-color);
+            transform: translateY(-5px);
+        }
+
+        .qr-placeholder {
+            margin-top: 20px;
+            border: 1px solid #555;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        @media (max-width: 768px) {
+            .container { grid-template-columns: 1fr; }
+            header h1 { font-size: 2rem; }
+        }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>WASEEM AHMAD</h1>
-        <p>Logistics & Electrical Expert [cite: 2026-01-11]</p>
-    </div>
-    <nav>
-        <a href="index.html">Home</a> | <a href="experience.html">Experience</a> | <a href="video.html">Watch Video</a>
-    </nav>
-    <div class="container">
-        <h2>About Me</h2>
-        <p>I am Waseem Ahmad, with 25 years of international experience in KSA, UAE, and Pakistan [cite: 2026-01-11, 2025-12-23]۔</p>
-        <p><b>Contact:</b> +966597440515 | wasimasif761@gmail.com [cite: 2025-12-24]</p>
-        <a href="https://www.facebook.com/wasim.asif.761" class="fb-btn">Connect on Facebook</a>
-        <a href="experience.html" class="btn">View My Work Experience</a>
-    </div>
-</body>
-        </html>
+
+<nav>
+    <a href="index.html">HOME</a>
+    <a href="experience.html">EXPERIENCE</a>
+    <a href="family.html">FAMILY</a>
+    <a href="media.html">VIDEOS</a>
+    <a href="contact.html">CONTACT</a>
+</nav>
+
+<header>
+    <h1>WASEEM ASIF</h1>
+    <p><span class="status-badge">Professional Logistics & Electrical Expert</span></p>
+    <p>International Experience: KSA | UAE | Malaysia | Pakistan</p>
+</header>
+
+<div class="container">
+    <div class="main-info">
+        <h2>Professional Summary</h2>
+        <p>Dedicated professional with over <b>25 years</b> of international experience in Logistics, Electrical maintenance, and Pharmaceutical sales. Proven track record of working in multicultural environments and delivering high-quality performance.</p>
+        <p>Currently based in Riyadh, Saudi Arabia, serving as a Loading/Unloading Specialist at ISAM Economic Co. & Partners Ltd.</p>
         
+        <div class="btn-group">
+            <a href="experience.html" class="btn btn-primary">View Full Work History</a>
+            <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
+        </div>
+        
+        <hr style="margin: 40px 0;">
+        
+        <h3>Core Expertise</h3>
+        <ul>
+            <li>Logistics & Material Management</li>
+            <li>Industrial & Residential Electrical Power Systems</li>
+            <li>Pharmaceutical Sales & Pharmacy Management</li>
+            <li>International Operations Handling</li>
+        </ul>
+    </div>
+
+    <div class="ad-sidebar">
+        <div class="ad-box">
+            <h4>Google Console Link</h4>
+            <p>Verification Area</p>
+        </div>
+        
+        <div class="ad-box">
+            <h4>Advertisements</h4>
+            <p>Your Ads Here</p>
+        </div>
+
+        <div class="ad-box" style="background-color: #eefbff; border-style: dotted;">
+            <h4>Saad Pie AI</h4>
+            <p>Visit my son's AI Platform</p>
+            <a href="https://steve-ai.netlify.app/chat" target="_blank" style="color: blue;">steve-ai.netlify.app</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="contact-grid">
+        <div>
+            <i class="fas fa-phone"></i>
+            <p>KSA: +966597440515<br>KSA: +966597447275</p>
+        </div>
+        <div>
+            <i class="fab fa-whatsapp"></i>
+            <p>WhatsApp: +923224994337</p>
+        </div>
+        <div>
+            <i class="fas fa-envelope"></i>
+            <p>wasimasif761@gmail.com</p>
+        </div>
+    </div>
+
+    <div class="social-links">
+        <a href="https://linkedin.com/in/YOUR_PROFILE" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://facebook.com/YOUR_PROFILE" title="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://tiktok.com/@YOUR_PROFILE" title="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="https://instagram.com/YOUR_PROFILE" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:wasimasif761@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+
+    <div class="qr-placeholder">
+        <p>Scan for Contact Info (QR Code)</p>
+        <i class="fas fa-qrcode" style="font-size: 50px;"></i>
+    </div>
+
+    <p style="margin-top: 30px; font-size: 0.8rem; opacity: 0.7;">© 2026 Waseem Asif. Developed for Professional Showcase.</p>
+</footer>
+
+</body>
+    </html>
+    
